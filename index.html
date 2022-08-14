@@ -5,30 +5,17 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        input[type=checkbox]:checked+div {
-            height: 0px;
-        }
-
-        div {
-            overflow: hidden;
-            width: 650px;
-            height: 300px;
-
-            -moz-transition-duration: 1s;
-            -webkit-transition-duration: 1s;
-            -o-transition-duration: 1s;
-            transition-duration: 1s;
+        input:not([type=password]) {
+            background: red;
         }
     </style>
 </head>
 
 <body>
-    <input type="checkbox" />
-    <div>
-        <h1>Header</h1>
-        <p>This is a section for text and I want to test how css is working. Is this text is long enough for testing?
-        </p>
-    </div>
+    <input type="password" />
+    <input type="text" />
+    <input type="password" />
+    <input type="text" />
 </body>
 
 </html>
