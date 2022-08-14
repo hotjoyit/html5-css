@@ -5,44 +5,29 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        #header {
-            width: 800px;
-            margin: 0 auto;
-            background: red;
+        input[type=checkbox]:checked+div {
+            height: 0px;
         }
 
-        #wrap {
-            width: 800px;
-            margin: 0 auto;
-            overflow: hidden
-        }
+        div {
+            overflow: hidden;
+            width: 650px;
+            height: 300px;
 
-        #aside {
-            width: 200px;
-            float: left;
-            background: blue;
-        }
-
-        #content {
-            width: 600px;
-            float: left;
-            background: green;
+            -moz-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
         }
     </style>
 </head>
 
 <body>
-    <div id="header">
+    <input type="checkbox" />
+    <div>
         <h1>Header</h1>
-    </div>
-    <div id="wrap">
-        <div id="aside">
-            <h1>Aside</h1>
-        </div>
-        <div id="content">
-            <h1>Content</h1>
-        </div>
-
+        <p>This is a section for text and I want to test how css is working. Is this text is long enough for testing?
+        </p>
     </div>
 </body>
 
